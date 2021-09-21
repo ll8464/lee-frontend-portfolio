@@ -1,0 +1,26 @@
+#nav {
+   
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    background:rgb(39, 37, 37);
+    overflow: hidden;
+    display: block;   
+    padding-left: 55vh;
+    
+    li{
+        float: left;        
+        
+        a{
+            color:white;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            &:hover{
+                background-color: green;
+            }
+         }
+    }
+}}

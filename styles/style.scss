@@ -1,6 +1,7 @@
-@use "url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')";
+
 $primaryButton: red;
 $textColor: rgb(39, 37, 37);
+@import './nav';
 
 @mixin flexCenter($direction){
     display: flex;
@@ -39,29 +40,4 @@ button{
     }
 }
 }
-#nav {
-   
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding:0;
-    background:rgb(39, 37, 37);
-    overflow: hidden;
-    display: block;   
-    padding-left: 55vh;
-    
-    li{
-        float: left;        
-        
-        a{
-            color:white;
-            display: block;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            &:hover{
-                background-color: green;
-            }
-         }
-    }
-}}
+

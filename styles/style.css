@@ -1,4 +1,29 @@
-@use "url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')";
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #272525;
+  overflow: hidden;
+  display: block;
+  padding-left: 55vh;
+}
+
+#nav ul li {
+  float: left;
+}
+
+#nav ul li a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav ul li a:hover {
+  background-color: green;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,31 +59,5 @@ section button {
 
 section button:hover {
   background: blue;
-}
-
-#nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background: #272525;
-  overflow: hidden;
-  display: block;
-  padding-left: 55vh;
-}
-
-#nav ul li {
-  float: left;
-}
-
-#nav ul li a {
-  color: white;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-#nav ul li a:hover {
-  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
