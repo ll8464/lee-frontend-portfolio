@@ -1,0 +1,67 @@
+@use "url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')";
+$primaryButton: red;
+$textColor: rgb(39, 37, 37);
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+header{
+    @include flexCenter(column);
+    height: 100vh;    
+    background: steelblue;
+    display: flex;
+    justify-content: center;
+    color: $textColor;
+    p{
+        width: 70vh;
+    }
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+       
+    
+}
+section
+{
+    
+button{
+    
+    background: $primaryButton;
+    
+    
+    &:hover {
+        background: blue;
+    }
+}
+}
+#nav {
+   
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    background:rgb(39, 37, 37);
+    overflow: hidden;
+    display: block;   
+    padding-left: 55vh;
+    
+    li{
+        float: left;        
+        
+        a{
+            color:white;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            &:hover{
+                background-color: green;
+            }
+         }
+    }
+}}

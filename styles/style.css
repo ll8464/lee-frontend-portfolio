@@ -1,0 +1,64 @@
+@use "url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')";
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background: steelblue;
+  display: flex;
+  justify-content: center;
+  color: #272525;
+}
+
+header p {
+  width: 70vh;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+section button {
+  background: red;
+}
+
+section button:hover {
+  background: blue;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #272525;
+  overflow: hidden;
+  display: block;
+  padding-left: 55vh;
+}
+
+#nav ul li {
+  float: left;
+}
+
+#nav ul li a {
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#nav ul li a:hover {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */
