@@ -1,0 +1,79 @@
+
+#skills .waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; 
+}
+#skills .waves svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 177px;
+}
+#skills .waves .shape-fill {
+    fill: #202731;
+}
+
+
+
+#about .blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+#about .blue svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 177px;
+}
+
+#about .blue .shape-fill {
+    fill: #4682B4;
+}
+
+.green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.green svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 177px;
+}
+
+.green .shape-fill {
+    fill: #008000;
+}
+.darkred {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.darkred svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 177px;
+}
+
+.darkred .shape-fill {
+    fill: #8B0000;
+}
