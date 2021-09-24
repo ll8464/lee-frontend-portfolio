@@ -23,7 +23,7 @@
 }
 
 #nav a.dropbtn {
-  background-color: #04AA6D;
+  background-color: #CA9591;
   color: white;
 }
 
@@ -31,13 +31,6 @@
   display: none;
 }
 
-/*.dropbtn {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }*/
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
   #nav a {
@@ -70,7 +63,7 @@
 }
 
 #skills .waves .shape-fill {
-  fill: #202731;
+  fill: #2B47E9;
 }
 
 #about .blue {
@@ -90,10 +83,10 @@
 }
 
 #about .blue .shape-fill {
-  fill: #4682B4;
+  fill: #7D2E68;
 }
 
-.green {
+#projects .green {
   position: absolute;
   top: 0;
   left: 0;
@@ -102,18 +95,18 @@
   line-height: 0;
 }
 
-.green svg {
+#projects .green svg {
   position: relative;
   display: block;
   width: calc(165% + 1.3px);
   height: 177px;
 }
 
-.green .shape-fill {
+#projects .green .shape-fill {
   fill: #008000;
 }
 
-.darkred {
+#contact .darkred {
   position: absolute;
   top: 0;
   left: 0;
@@ -122,7 +115,7 @@
   line-height: 0;
 }
 
-.darkred svg {
+#contact .darkred svg {
   position: relative;
   display: block;
   width: calc(165% + 1.3px);
@@ -148,10 +141,11 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  background: steelblue;
   display: flex;
   justify-content: center;
-  color: #272525;
+  align-items: center;
+  color: white;
+  background-image: url(/images/layered-waves-haikei.svg);
 }
 
 header p {
@@ -179,9 +173,12 @@ main section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 400px;
-  padding: 100px 20vw;
+  min-height: 80vh;
   color: white;
+}
+
+#about {
+  background-image: url(/images/layered-salmon.svg);
 }
 
 #skills {
@@ -194,5 +191,13 @@ main section {
 
 #contact {
   background: mediumpurple;
+}
+
+.spacer {
+  aspect-ratio: 900/600;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

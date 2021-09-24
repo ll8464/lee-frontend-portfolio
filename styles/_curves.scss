@@ -14,7 +14,7 @@
     height: 177px;
 }
 #skills .waves .shape-fill {
-    fill: #202731;
+    fill: #2B47E9;
 }
 
 
@@ -36,10 +36,10 @@
 }
 
 #about .blue .shape-fill {
-    fill: #4682B4;
+    fill: #7D2E68;
 }
 
-.green {
+#projects .green {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,17 +48,17 @@
     line-height: 0;
 }
 
-.green svg {
+#projects .green svg {
     position: relative;
     display: block;
     width: calc(165% + 1.3px);
     height: 177px;
 }
 
-.green .shape-fill {
+#projects .green .shape-fill {
     fill: #008000;
 }
-.darkred {
+#contact .darkred {
     position: absolute;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@
     line-height: 0;
 }
 
-.darkred svg {
+#contact .darkred svg {
     position: relative;
     display: block;
     width: calc(165% + 1.3px);
