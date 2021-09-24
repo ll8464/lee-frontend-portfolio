@@ -106,6 +106,18 @@
   fill: #9D3A83;
 }
 
+#about {
+  background-image: url(/images/layered-salmon.svg);
+}
+
+#projects {
+  background-image: url(/images/layer-peach.svg);
+}
+
+#contact {
+  background-image: url(/images/layer-darkblue-contact.svg);
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,20 +165,50 @@ main section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 80vh;
+  min-height: 50vh;
   color: white;
+  height: 100vh;
 }
 
-#about {
-  background-image: url(/images/layered-salmon.svg);
+#about-content {
+  height: 50vh;
 }
 
-#projects {
-  background-image: url(/images/layer-peach.svg);
+#about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid black;
 }
 
-#contact {
-  background-image: url(/images/layer-darkblue-contact.svg);
+#about-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 2px solid black;
+}
+
+#about-child2 {
+  border: 2px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#projects-container {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid black;
+}
+
+#clothing {
+  border: 2px solid black;
+}
+
+#weather {
+  border: 2px solid black;
 }
 
 .spacer {
@@ -175,5 +217,22 @@ main section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  #about-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #about-container {
+    display: block;
+    z-index: 3;
+  }
+  .shape-fill {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

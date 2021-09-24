@@ -3,6 +3,7 @@ $primaryButton: red;
 $textColor: rgb(255,255,255);
 @import './nav';
 @import './curves';
+@import './background-image';
 
 @mixin flexCenter($direction){
     display: flex;
@@ -35,27 +36,62 @@ main section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 50vh;
     //padding: 100px 20vw;
     color: white;
+    height: 100vh;
+    
 }
-#about{
-    background-image: url(/images/layered-salmon.svg);
+#about-content{
+    height: 50vh;
+}
+#about-container{
+    display:flex;
+    border: 2px solid black;
+}
+#about-child{
+    flex: 1;
+    border:2px solid black;
+}
+#about-child2{
+    border:2px solid black;
+    flex:1;
 }
 
-#projects
-{
-    background-image: url(/images/layer-peach.svg);
+#projects-container{
+    height: 50vh;
+    display:flex;
+    border: 2px solid black;
 }
-#contact
-{
-    background-image: url(/images/layer-darkblue-contact.svg);
+
+#clothing{
+    
+    border:2px solid black;
+}
+#weather{
+    border:2px solid black;
+    
 }
 
 .spacer {
-    aspect-ratio:900/600;
+    aspect-ratio: 900/600;
     width:100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+@media only screen and (max-width: 600px){
+    #about-child{
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    #about-container{
+        display: block;
+        z-index: 3;
+    }
+    .shape-fill{
+        display:none;
+    }
+    
 }
