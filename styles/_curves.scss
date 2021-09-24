@@ -1,21 +1,5 @@
 
-#skills .waves {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0; 
-}
-#skills .waves svg {
-    position: relative;
-    display: block;
-    width: calc(165% + 1.3px);
-    height: 177px;
-}
-#skills .waves .shape-fill {
-    fill: #2B47E9;
-}
+
 
 
 
@@ -56,7 +40,7 @@
 }
 
 #projects .green .shape-fill {
-    fill: #008000;
+    fill: #152FC4;
 }
 #contact .darkred {
     position: absolute;
@@ -75,5 +59,5 @@
 }
 
 .darkred .shape-fill {
-    fill: #8B0000;
+    fill: #9D3A83 ;
 }
