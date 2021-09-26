@@ -1,30 +1,17 @@
 
-$primaryButton: red;
-$textColor: rgb(255,255,255);
+
 @import './nav';
 @import './curves';
 @import './background-image';
+@import './header';
+@import './about';
+@import './projects';
 
-@mixin flexCenter($direction){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: $direction;
+
+*{
+    box-sizing: border-box;
 }
 
-header{
-    @include flexCenter(column);
-    height: 100vh;    
-    
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    color: $textColor;
-    background-image: url(/images/layered-waves-haikei.svg);
-    p{
-        width: 70vh;
-    }
-}
 body{
     font-family: 'Roboto', sans-serif;  
     margin: 0;
@@ -38,31 +25,14 @@ main section{
     justify-content: center;
     min-height: 50vh;
     //padding: 100px 20vw;
-    color: white;
+    color: black;
     height: 100vh;
     
-}
-#about-content{
-    height: 50vh;
-}
-#about-container{
-    display:flex;
-    border: 2px solid black;
-}
-#about-child{
-    flex: 1;
-    border:2px solid black;
-}
-#about-child2{
-    border:2px solid black;
-    flex:1;
+    
 }
 
-#projects-container{
-    height: 50vh;
-    display:flex;
-    border: 2px solid black;
-}
+
+
 
 #clothing{
     
@@ -80,15 +50,64 @@ main section{
     background-position: center;
     background-size: cover;
 }
-@media only screen and (max-width: 600px){
+#projects-content{
+    height: 60vh;
+    
+}
+#projects-container{
+    display:flex;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+}
+#project-child{
+    flex: 1;
+    border:2px solid black;
+    margin-left:2%;
+    margin-right: 2%;
+    padding-top: 0vh;
+    padding-bottom: 5vh;
+    max-width: 35vw;
+    max-height:65vh;
+}
+#project-child2{
+    border:2px solid black;
+    flex:1;
+    margin-left:2%;
+    margin-right: 2%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#projects{
+    background: blue;
+    color:blue;
+}
+.projects{
+    background: blue;
+    color:blue;
+
+}
+
+@media only screen and (max-width: 620px){
     #about-child{
         display: flex;
         
         flex-wrap: wrap;
+        max-width: fit-content;
+        max-height:fit-content
+    }
+    #about{
+        height: 105vh;
+    }
+    #about-content{
+        height: fit-content;
+        max-height: 100vh;
     }
     #about-container{
         display: block;
         z-index: 3;
+        max-width: fit-content;
+        max-height:fit-content
     }
     .shape-fill{
         display:none;
