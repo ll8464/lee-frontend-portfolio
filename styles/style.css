@@ -118,12 +118,8 @@
   background-image: url(/images/layer-darkblue-contact.svg);
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 header {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,46 +129,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   background-image: url(/images/layered-waves-haikei.svg);
 }
 
 header p {
   width: 70vh;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  background: #202731;
-}
-
-main section {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-height: 50vh;
-  color: white;
-  height: 100vh;
 }
 
 #about-content {
@@ -212,12 +174,72 @@ main section {
   padding-bottom: 5vh;
 }
 
+#projects-content {
+  height: 60vh;
+}
+
 #projects-container {
-  height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border: 2px solid black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#project-child {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 2px solid black;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 0vh;
+  padding-bottom: 5vh;
+  max-width: 35vw;
+  max-height: 65vh;
+}
+
+#project-child2 {
+  border: 2px solid black;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #202731;
+}
+
+main section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 50vh;
+  color: white;
+  height: 100vh;
 }
 
 #clothing {
