@@ -217,7 +217,7 @@ header p {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   background: #202731;
 }
@@ -240,6 +240,17 @@ main section {
   min-height: 50vh;
   color: white;
   height: 100vh;
+  overflow: hidden;
+}
+
+#dice_img {
+  display: block;
+  overflow: hidden;
+}
+
+#dice_img img {
+  width: 100%;
+  height: auto;
 }
 
 #clothing {
