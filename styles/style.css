@@ -107,7 +107,7 @@
 }
 
 #about {
-  background-image: url(../layered-salmon.svg);
+  background-image: url(lee-frontend-portfolio/images/layered-salmon.svg);
 }
 
 #projects {
@@ -130,7 +130,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   color: white;
-  background-image: url(../images/layered-waves-haikei.svg);
+  background-image: url(lee-frontend-portfolio/images/layered-waves-haikei.svg);
 }
 
 header p {
