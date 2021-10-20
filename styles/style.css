@@ -23,7 +23,7 @@
 }
 
 #nav a.dropbtn {
-  background-color: #CA9591;
+  background-color: #ca9591;
   color: white;
 }
 
@@ -42,7 +42,7 @@
     top: 0;
     left: 0;
     -webkit-transform: none;
-            transform: none;
+    transform: none;
   }
 }
 
@@ -63,7 +63,7 @@
 }
 
 #about .blue .shape-fill {
-  fill: #7D2E68;
+  fill: #7d2e68;
 }
 
 #projects .green {
@@ -83,7 +83,7 @@
 }
 
 #projects .green .shape-fill {
-  fill: #152FC4;
+  fill: #152fc4;
 }
 
 #contact .darkred {
@@ -103,7 +103,7 @@
 }
 
 .darkred .shape-fill {
-  fill: #9D3A83;
+  fill: #9d3a83;
 }
 
 #about {
@@ -124,13 +124,13 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
-  background-image: url(/images/layered-waves-haikei.svg);
+  background-image: url(./images/layered-waves-haikei.svg);
 }
 
 header p {
@@ -152,8 +152,8 @@ header p {
 
 #about-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 2px solid black;
   margin-left: 2%;
   margin-right: 2%;
@@ -166,8 +166,8 @@ header p {
 #about-child2 {
   border: 2px solid black;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-left: 2%;
   margin-right: 2%;
   padding-top: 5vh;
@@ -189,8 +189,8 @@ header p {
 
 #project-child {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border: 2px solid black;
   margin-left: 2%;
   margin-right: 2%;
@@ -203,8 +203,8 @@ header p {
 #project-child2 {
   border: 2px solid black;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-left: 2%;
   margin-right: 2%;
   padding-top: 5vh;
@@ -213,7 +213,7 @@ header p {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -229,14 +229,14 @@ main section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: 50vh;
   color: white;
   height: 100vh;
@@ -275,7 +275,7 @@ main section {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
