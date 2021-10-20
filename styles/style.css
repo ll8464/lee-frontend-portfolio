@@ -107,15 +107,15 @@
 }
 
 #about {
-  background-image: url(../layered-salmon.svg);
+  background-image: url(../images/layered-salmon.svg);
 }
 
 #projects {
-  background-image: url(/images/layer-peach.svg);
+  background-image: url(../images/layer-peach.svg);
 }
 
 #contact {
-  background-image: url(/images/layer-darkblue-contact.svg);
+  background-image: url(../images/layer-darkblue-contact.svg);
 }
 
 header {
@@ -130,7 +130,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   color: white;
-  background-image: url(/images/layered-waves-haikei.svg);
+  background-image: url(../images/layered-waves-haikei.svg);
 }
 
 header p {
