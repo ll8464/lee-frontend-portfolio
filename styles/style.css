@@ -115,7 +115,7 @@
 }
 
 #contact {
-  background-image: url(./layer-darkblue-contact.svg);
+  background-image: url(../layer-darkblue-contact.svg);
 }
 
 header {
@@ -130,7 +130,7 @@ header {
   -ms-flex-align: center;
   align-items: center;
   color: white;
-  background-image: url(/layered-waves-haikei.svg);
+  background-image: url(../layered-waves-haikei.svg);
 }
 
 header p {
