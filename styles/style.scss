@@ -49,22 +49,26 @@ main section {
   background-size: cover;
 }
 
-@media only screen and (max-width: 620px) {
-  #about-child {
+@media only screen and (max-width: 830px) {
+  #about-child,
+  #projects-child {
     display: flex;
 
     flex-wrap: wrap;
     max-width: fit-content;
     max-height: fit-content;
   }
-  #about {
+  #about,
+  #projects {
     height: 105vh;
   }
-  #about-content {
+  #about-content,
+  #projects-content {
     height: fit-content;
     max-height: 100vh;
   }
-  #about-container {
+  #about-container,
+  #projects-container {
     display: block;
     z-index: 3;
     max-width: fit-content;
@@ -72,5 +76,15 @@ main section {
   }
   .shape-fill {
     display: none;
+  }
+  #about #github_logo,
+  #html5_logo,
+  #javascript_logo,
+  #css_logo,
+  #python_logo {
+    width: 4vw;
+    height: 6vh;
+    min-width: 35px;
+    min-height: 35px;
   }
 }
