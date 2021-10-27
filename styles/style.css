@@ -107,15 +107,15 @@
 }
 
 #about {
-  background-image: url("./layered-salmon.svg");
+  background-image: url("../layered-salmon.svg");
 }
 
 #projects {
-  background-image: url("./layered-salmon.svg");
+  background-image: url("../layered-salmon.svg");
 }
 
 #contact {
-  background-image: url("./layered-salmon.svg");
+  background-image: url("../layered-salmon.svg");
 }
 
 header {
@@ -130,7 +130,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  background-image: url("./layered-salmon.svg");
+  background-image: url("../layered-salmon.svg");
 }
 
 header p {
