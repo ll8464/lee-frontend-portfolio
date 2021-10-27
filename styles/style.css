@@ -130,7 +130,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  background-image: url(https://github.com/ll8464/lee-frontend-portfolio/blob/2dce0bf9a1b8d1cfded6542d4fc2a98fabaa1198/images/layered-waves-haikei.svg);
+  background-image: url(images/layered-waves-haikei.svg);
 }
 
 header p {
