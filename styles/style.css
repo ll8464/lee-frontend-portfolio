@@ -1,7 +1,9 @@
 #nav {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   overflow: hidden;
   background-color: #333;
+  z-index: 10;
 }
 
 #nav a {
@@ -23,19 +25,21 @@
 }
 
 #nav a.dropbtn {
-  background-color: #CA9591;
+  background-color: #ca9591;
   color: white;
 }
 
-.dropdown-content {
-  display: none;
-}
-
+/*.dropdown-content{
+      display:none;
+  }*/
 /* Responsive navigation menu (for mobile devices) */
 @media screen and (max-width: 600px) {
   #nav a {
     float: none;
     display: block;
+  }
+  #nav {
+    position: relative;
   }
   .dropbtn {
     position: relative;
@@ -264,12 +268,25 @@ main section {
   height: auto;
 }
 
+#contact-container {
+  -webkit-box-flex: 0,;
+      -ms-flex: 0, 0, 250px;
+          flex: 0, 0, 250px;
+}
+
 .spacer {
   aspect-ratio: 900/600;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.shape-fill,
+.green,
+.blue,
+.darkred {
+  display: none;
 }
 
 @media only screen and (max-width: 830px) {

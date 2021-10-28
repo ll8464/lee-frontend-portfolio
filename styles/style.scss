@@ -34,6 +34,9 @@ main section {
     height: auto;
   }
 }
+#contact-container {
+  flex: 0, 0, 250px;
+}
 // #clothing {
 //   border: 2px solid black;
 // }
@@ -48,7 +51,12 @@ main section {
   background-position: center;
   background-size: cover;
 }
-
+.shape-fill,
+.green,
+.blue,
+.darkred {
+  display: none;
+}
 @media only screen and (max-width: 830px) {
   #about-child,
   #projects-child {
