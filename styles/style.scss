@@ -131,3 +131,30 @@ main section {
     height: 170vh;
   }
 }
+@media only screen and (max-height: 625px) {
+  #projects,
+  #contact {
+    height: 120vh;
+  }
+  #projects-content,
+  #projects-container,
+  #contact-content,
+  #about-cantainer,
+  #about-content {
+    height: 120vh;
+  }
+}
+@media only screen and (max-height: 430px) {
+  #projects,
+  #contact,
+  #about {
+    height: 160vh;
+  }
+  #projects-content,
+  #projects-container,
+  #contact-content,
+  #about-cantainer,
+  #about-content {
+    height: 160vh;
+  }
+}
