@@ -1,5 +1,5 @@
 #about-content {
-  height: 60vh;
+  height: 70vh;
 }
 #about-container {
   display: flex;
@@ -33,6 +33,10 @@
 #javascript_logo,
 #css_logo,
 #python_logo {
-  width: 4vw;
-  height: 6vh;
+  // width: 8vw;
+  // height: 10vh;
+  min-width: 80px;
+  min-height: 100px;
+  max-width: 120px;
+  max-height: 140px;
 }

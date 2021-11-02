@@ -142,7 +142,7 @@ header p {
 }
 
 #about-content {
-  height: 60vh;
+  height: 70vh;
 }
 
 #about-container {
@@ -184,12 +184,14 @@ header p {
 #javascript_logo,
 #css_logo,
 #python_logo {
-  width: 4vw;
-  height: 6vh;
+  min-width: 80px;
+  min-height: 100px;
+  max-width: 120px;
+  max-height: 140px;
 }
 
 #projects-content {
-  height: 60vh;
+  height: 70vh;
 }
 
 #projects-container {
@@ -200,7 +202,8 @@ header p {
   font-weight: bold;
 }
 
-#project-child {
+#project-child,
+#project-child2 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -210,16 +213,6 @@ header p {
   padding-bottom: 5vh;
   max-width: 35vw;
   max-height: 65vh;
-}
-
-#project-child2 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
 }
 
 #projects h1 {
@@ -235,6 +228,10 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   background: #202731;
+}
+
+header h2 {
+  height: 30vh;
 }
 
 main section {
@@ -258,20 +255,39 @@ main section {
   overflow: hidden;
 }
 
-#dice_img {
+#dice_img,
+#portfolio_img {
   display: block;
   overflow: hidden;
 }
 
-#dice_img img {
+#dice_img img,
+#portfolio_img img {
   width: 100%;
   height: auto;
 }
 
-#contact-container {
-  -webkit-box-flex: 0,;
-      -ms-flex: 0, 0, 250px;
-          flex: 0, 0, 250px;
+#contact-content {
+  height: 70vh;
+}
+
+#contact-content h1 {
+  text-align: center;
+}
+
+.button {
+  background-color: #5b6bc4;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .spacer {
@@ -304,16 +320,17 @@ main section {
     max-height: -moz-fit-content;
     max-height: fit-content;
   }
-  #about,
-  #projects {
-    height: 105vh;
+  #about {
+    height: 110vh;
   }
-  #about-content,
+  #projects {
+    height: 150vh;
+  }
+  #about-content {
+    height: 100vh;
+  }
   #projects-content {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    max-height: 100vh;
+    height: 130vh;
   }
   #about-container,
   #projects-container {
@@ -334,10 +351,20 @@ main section {
   #javascript_logo,
   #css_logo,
   #python_logo {
-    width: 4vw;
-    height: 6vh;
-    min-width: 35px;
-    min-height: 35px;
+    width: 8vw;
+    height: 10vh;
+    min-width: 50px;
+    min-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #projects {
+    height: 170vh;
+  }
+  #projects-content,
+  #projects-container {
+    height: 170vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
