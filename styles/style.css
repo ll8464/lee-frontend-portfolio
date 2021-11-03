@@ -161,8 +161,6 @@ header p {
   margin-right: 2%;
   padding-top: 0vh;
   padding-bottom: 5vh;
-  max-width: 35vw;
-  max-height: 65vh;
 }
 
 #about-child2 {
@@ -191,7 +189,7 @@ header p {
 }
 
 #projects-content {
-  height: 70vh;
+  height: 100vh;
 }
 
 #projects-container {
@@ -211,8 +209,16 @@ header p {
   margin-right: 2%;
   padding-top: 0vh;
   padding-bottom: 5vh;
-  max-width: 35vw;
-  max-height: 65vh;
+  max-width: 80vw;
+  max-height: 95vh;
+  background: rgba(235, 231, 231, 0.9);
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 40px -10px #000;
+          box-shadow: 0 0 40px -10px #000;
+  padding: 20px 35px;
+  position: relative;
+  margin: 20px;
+  color: #172327;
 }
 
 #projects h1 {
@@ -259,11 +265,6 @@ input:focus {
 
 textarea {
   background: rgba(247, 244, 244, 0.7);
-}
-
-#contact .button:hover {
-  background: rgba(235, 231, 231, 0.9);
-  color: #5b6bc4;
 }
 
 * {
@@ -337,6 +338,11 @@ main section {
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.button:hover {
+  background: rgba(235, 231, 231, 0.9);
+  color: #5b6bc4;
+}
+
 .spacer {
   aspect-ratio: 900/600;
   width: 100%;
@@ -360,12 +366,6 @@ main section {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
   }
   #about {
     height: 110vh;
@@ -374,21 +374,16 @@ main section {
     height: 150vh;
   }
   #about-content {
-    height: 100vh;
+    height: 90vh;
   }
   #projects-content {
     height: 130vh;
+    min-width: 80vw;
   }
   #about-container,
   #projects-container {
     display: block;
     z-index: 3;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
   }
   .shape-fill {
     display: none;
@@ -413,34 +408,12 @@ main section {
   #projects-container {
     height: 170vh;
   }
-}
-
-@media only screen and (max-height: 625px) {
-  #projects,
-  #contact {
-    height: 120vh;
-  }
-  #projects-content,
-  #projects-container,
-  #contact-content,
-  #about-cantainer,
-  #about-content {
-    height: 120vh;
-  }
-}
-
-@media only screen and (max-height: 430px) {
-  #projects,
-  #contact,
-  #about {
-    height: 160vh;
-  }
-  #projects-content,
-  #projects-container,
-  #contact-content,
-  #about-cantainer,
-  #about-content {
-    height: 160vh;
+  #project-child,
+  #project-child2 {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    max-width: 80vw;
+    max-height: 80vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

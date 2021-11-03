@@ -64,7 +64,10 @@ main section {
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.button:hover {
+  background: rgba(235, 231, 231, 0.9);
+  color: rgb(91, 107, 196);
+}
 .spacer {
   aspect-ratio: 900/600;
   width: 100%;
@@ -84,8 +87,8 @@ main section {
     display: flex;
 
     flex-wrap: wrap;
-    max-width: fit-content;
-    max-height: fit-content;
+    // max-width: fit-content;
+    // max-height: fit-content;
   }
   #about {
     height: 110vh;
@@ -94,18 +97,19 @@ main section {
     height: 150vh;
   }
   #about-content {
-    height: 100vh;
+    height: 90vh;
   }
   #projects-content {
     height: 130vh;
     //max-height: 100vh;
+    min-width: 80vw;
   }
   #about-container,
   #projects-container {
     display: block;
     z-index: 3;
-    max-width: fit-content;
-    max-height: fit-content;
+    //   max-width: fit-content;
+    //   max-height: fit-content;
   }
 
   .shape-fill {
@@ -131,31 +135,47 @@ main section {
   #projects-container {
     height: 170vh;
   }
-}
-@media only screen and (max-height: 625px) {
-  #projects,
-  #contact {
-    height: 120vh;
-  }
-  #projects-content,
-  #projects-container,
-  #contact-content,
-  #about-cantainer,
-  #about-content {
-    height: 120vh;
+
+  #project-child,
+  #project-child2 {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    max-width: 80vw;
+    max-height: 80vh;
   }
 }
-@media only screen and (max-height: 430px) {
-  #projects,
-  #contact,
-  #about {
-    height: 160vh;
-  }
-  #projects-content,
-  #projects-container,
-  #contact-content,
-  #about-cantainer,
-  #about-content {
-    height: 160vh;
-  }
-}
+//   @media only screen and (max-height: 880px) {
+//     #projects,
+//     #contact {
+//       height: 120vh;
+//     }
+
+//     #contact-content,
+//     #about-container,
+//     #about-content {
+//       height: 100vh;
+//     }
+//     #projects,
+//     #projects-content,
+//     #projects-container {
+//       height: 180vh;
+//     }
+//     #projects-content {
+//       min-height: 180vh;
+//     }
+
+//   @media only screen and (max-height: 430px) {
+//     #projects,
+//     #contact,
+//     #about {
+//       height: 160vh;
+//     }
+//     #projects-content,
+//     #projects-container,
+//     #contact-content,
+//     #about-cantainer,
+//     #about-content {
+//       height: 160vh;
+//     }
+//   }
+// }
