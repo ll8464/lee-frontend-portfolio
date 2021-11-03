@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css">
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="script.js"></script>
+
     <title>Lee Lacey</title>
   </head>
   <body>
@@ -24,6 +27,7 @@
       </h2>
     </header>
     <main>
+      
       <section id="about" class="spacer">
         <div id="about-content">
           <h1>About</h1>
@@ -35,8 +39,7 @@
                 Manufacturing for the oil and gas industries. <br /><br />In
                 2021, I earned a Computer Programming certification from Lone
                 Star College. <br /><br />
-                Since then, I created several projects and continue to look for
-                ways to excel.
+                Since then, I created several projects which can be viewed via <a href="https://github.com/ll8464/lee-frontend-portfolio.git" target="_blank">github</a>.
               </p>
             </div>
             <div id="about-child2">
@@ -49,20 +52,9 @@
             </div>
           </div>
         </div>
+        <div class="jump"><a href="#home"><img src="images/up_arrow.png" alt="Return Home"></a></div>
         <div>
-          <div class="blue">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                class="shape-fill"
-              ></path>
-            </svg>
-          </div>
+         
         </div>
       </section>
 
@@ -81,72 +73,59 @@
               </div>
               <p>
                 A two player dice game where you compete to see who can get to
-                100 points the fastest.
-                <a href="https://ll8464.github.io/dice_game/" target="_blank"><button>Play Game!</button>                  
+                100 points the fastest.</p>
+                <a href="https://ll8464.github.io/dice_game/" target="_blank"><button class="button button1">Play Game!</button>                  
                 </a>                
-                <a href="https://github.com/ll8464/dice_game.git" target="_blank"><button>Code!</button></a>              
+                <a href="https://github.com/ll8464/dice_game.git" target="_blank"><button class="button">Code!</button></a>              
                 
-              </p>
+              
             </div>
             <div id="project-child2">
-              <h2>Weather App</h2>
-              <p>Weather app utilizing d3.</p>
+              <h2>This Portfolio</h2><div id="portfolio_img"><a href="https://github.com/ll8464/lee-frontend-portfolio.git" target=_blank><img src="images/portfolio_pic.png"></a></div>
+              <p>This portfolio was made utilizing SASS, haikei waves, and netlify.</p><a href="https://github.com/ll8464/lee-frontend-portfolio.git" target=_blank><button class="button button2">Code!</button></a>
             </div>
-          </div>
-          <div>
-            <div class="green">
-              <svg
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 1200 120"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                  class="shape-fill"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="spacer">
-        <h1>Contact Me</h1>
-        <p>Feel free to contact me at:</p>
-        <form name="contact" method="POST" data-netlify="true">
-          <label for="fname">First Name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="lname">Last Name:</label><br />
-          <input type="text" id="lname" name="lname" /><br />
-          <!--<label for="username">Username</label><br />
-          <input type="text" id="username" name="username" /><br /> -->
-          <label for="email">Email:</label><br />
-          <input type="text" id="email" name="email" /><br />
-          <label for="input_comment">Comment:</label><br />
+          </div>          
           
-          <textarea name="comment" rows="10" cols="30"></textarea>
+        </div>
+        <div class="jump"><a href="#home"><img src="images/up_arrow.png" alt="Return Home"></a></div>
+      </section>
+      
+      <section id="contact" class="spacer">
+
+        
+        <div id="contact-content">
+          
+        
+        <form name="contact" method="POST" data-netlify="true" class="form">
+          <h1>Contact</h1> <br>
+          
+
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="fname" name="fname" placeholder="Please Type First Name" /><br />
+          <label for="lname">Last Name:</label><br />
+
+          <input type="text" id="lname" name="lname" placeholder="Please Type Last Name"/><br />
+         
+
+          <label for="email">Email:</label><br />
+          <input type="text" id="email" name="email" placeholder="example@gmail.com" /><br />
+          <label for="input_comment">Comment:</label><br />
+
+          <textarea name="comment" rows="3" cols="31" placeholder="Please leave comments and suggestions!"></textarea>
           <div class="field">
             <div data-netlify-recaptcha="true"></div>
+
           </div>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" class="button" />
         </form>
-        <div>
-          <div class="darkred">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                class="shape-fill"
-              ></path>
-            </svg>
-          </div>
+               
+        
         </div>
+        <div class="jump"><a href="#home"><img src="images/up_arrow.png" alt="Return Home"></a></div>
       </section>
     </main>
-    <footer>Designed by Lee Lacey</footer>
+    <footer><p>Designed by Lee Lacey || <a href="https://github.com/ll8464/lee-frontend-portfolio.git"><img src="images/github_logo.png"></a></p></footer>
   </body>
+  
+    
 </html>

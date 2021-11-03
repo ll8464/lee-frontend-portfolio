@@ -1,9 +1,9 @@
 @import "./nav";
-@import "./curves";
 @import "./background-image";
 @import "./header";
 @import "./about";
 @import "./projects";
+@import "./contact";
 
 * {
   box-sizing: border-box;
@@ -14,6 +14,9 @@ body {
   margin: 0;
   background: #202731;
 }
+header h2 {
+  height: 30vh;
+}
 main section {
   position: relative;
   display: flex;
@@ -21,12 +24,13 @@ main section {
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  //padding: 100px 20vw;
+
   color: white;
   height: 100vh;
   overflow: hidden;
 }
-#dice_img {
+#dice_img,
+#portfolio_img {
   display: block;
   overflow: hidden;
   img {
@@ -34,19 +38,51 @@ main section {
     height: auto;
   }
 }
-// #clothing {
-//   border: 2px solid black;
-// }
-// #weather {
-//   border: 2px solid black;
-// }
+#contact-content {
+  height: 70vh;
+}
+#contact-content h1 {
+  text-align: center;
+}
 
+.button {
+  background-color: rgb(91, 107, 196);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+}
+.button:hover {
+  background: rgba(235, 231, 231, 0.9);
+  color: rgb(91, 107, 196);
+}
 .spacer {
   aspect-ratio: 900/600;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+footer {
+  background: gainsboro;
+  font-weight: bold;
+}
+footer img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+@media only screen and (min-width: 1360px) {
+  #projects {
+    min-height: 130vh;
+  }
 }
 
 @media only screen and (max-width: 830px) {
@@ -55,36 +91,70 @@ main section {
     display: flex;
 
     flex-wrap: wrap;
-    max-width: fit-content;
-    max-height: fit-content;
   }
-  #about,
+  #about {
+    height: 110vh;
+  }
   #projects {
-    height: 105vh;
+    height: 180vh;
   }
-  #about-content,
+  #about-content {
+    height: 90vh;
+  }
   #projects-content {
-    height: fit-content;
-    max-height: 100vh;
+    height: 170vh;
+
+    min-width: 80vw;
   }
   #about-container,
   #projects-container {
     display: block;
     z-index: 3;
-    max-width: fit-content;
-    max-height: fit-content;
   }
-  .shape-fill {
-    display: none;
-  }
+
   #about #github_logo,
   #html5_logo,
   #javascript_logo,
   #css_logo,
   #python_logo {
-    width: 4vw;
-    height: 6vh;
-    min-width: 35px;
-    min-height: 35px;
+    width: 8vw;
+    height: 10vh;
+    min-width: 50px;
+    min-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  #projects {
+    min-height: 170vh;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #projects {
+    height: 120vh;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  #projects {
+    height: 190vh;
+  }
+  #projects-content,
+  #projects-container {
+    height: 170vh;
+  }
+
+  #project-child,
+  #project-child2 {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+  #about {
+    height: 140vh;
+  }
+  #about-content {
+    min-height: 120vh;
   }
 }
