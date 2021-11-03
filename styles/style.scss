@@ -57,6 +57,7 @@ main section {
   margin: 4px 2px;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
 }
 .button:hover {
   background: rgba(235, 231, 231, 0.9);
@@ -68,6 +69,14 @@ main section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+footer {
+  background: gainsboro;
+  font-weight: bold;
+}
+footer img {
+  max-width: 50px;
+  max-height: 50px;
 }
 
 @media only screen and (min-width: 1360px) {
@@ -114,6 +123,7 @@ main section {
     min-height: 50px;
   }
 }
+
 @media only screen and (max-width: 790px) {
   #projects {
     min-height: 170vh;
