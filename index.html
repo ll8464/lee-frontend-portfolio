@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="script.js"></script>
+
     <title>Lee Lacey</title>
   </head>
   <body>
+     
     <section id="nav">
       <div id="menu">
         <a href="#home" class="dropbtn">Home</a>
@@ -20,7 +23,7 @@
     <header id="home" class="spacer">
       <h2>
         Hello, my name is Lee.<br />
-        I am a front-end developer.
+        I am a front-end developer!
       </h2>
     </header>
     <main>
@@ -55,7 +58,7 @@
         </div>
       </section>
 
-      <section id="projects" class="spacer">
+      <section id="projects" class="spacer">        
         <div id="projects-content">
           <h1>Projects</h1>
           <div id="projects-container">
@@ -88,6 +91,7 @@
       </section>
       
       <section id="contact" class="spacer">
+
         
         <div id="contact-content">
           
@@ -95,18 +99,23 @@
         <form name="contact" method="POST" data-netlify="true" class="form">
           <h1>Contact</h1> <br>
           
+
           <label for="fname">First Name:</label><br />
           <input type="text" id="fname" name="fname" placeholder="Please Type First Name" /><br />
           <label for="lname">Last Name:</label><br />
+
           <input type="text" id="lname" name="lname" placeholder="Please Type Last Name"/><br />
          
+
           <label for="email">Email:</label><br />
           <input type="text" id="email" name="email" placeholder="example@gmail.com" /><br />
           <label for="input_comment">Comment:</label><br />
           
+
           <textarea name="comment" rows="3" cols="31" placeholder="Please leave comments and suggestions!"></textarea>
           <div class="field">
             <div data-netlify-recaptcha="true"></div>
+
           </div>
           <input type="submit" value="Submit" class="button" />
         </form>
