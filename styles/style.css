@@ -93,23 +93,14 @@ header p {
   font-weight: bold;
 }
 
-#about-child {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-top: 0vh;
-  padding-bottom: 5vh;
-}
-
+#about-child,
 #about-child2 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-left: 2%;
   margin-right: 2%;
-  padding-top: 5vh;
+  padding-top: 0vh;
   padding-bottom: 5vh;
 }
 
@@ -291,6 +282,12 @@ main section {
   background-size: cover;
 }
 
+@media only screen and (min-width: 1360px) {
+  #projects {
+    min-height: 130vh;
+  }
+}
+
 @media only screen and (max-width: 830px) {
   #about-child,
   #projects-child {
@@ -304,13 +301,13 @@ main section {
     height: 110vh;
   }
   #projects {
-    height: 150vh;
+    height: 180vh;
   }
   #about-content {
     height: 90vh;
   }
   #projects-content {
-    height: 130vh;
+    height: 170vh;
     min-width: 80vw;
   }
   #about-container,
@@ -330,9 +327,21 @@ main section {
   }
 }
 
+@media only screen and (max-width: 790px) {
+  #projects {
+    min-height: 170vh;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #projects {
+    height: 120vh;
+  }
+}
+
 @media only screen and (max-width: 380px) {
   #projects {
-    height: 170vh;
+    height: 190vh;
   }
   #projects-content,
   #projects-container {

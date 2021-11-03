@@ -70,6 +70,12 @@ main section {
   background-size: cover;
 }
 
+@media only screen and (min-width: 1360px) {
+  #projects {
+    min-height: 130vh;
+  }
+}
+
 @media only screen and (max-width: 830px) {
   #about-child,
   #projects-child {
@@ -81,13 +87,13 @@ main section {
     height: 110vh;
   }
   #projects {
-    height: 150vh;
+    height: 180vh;
   }
   #about-content {
     height: 90vh;
   }
   #projects-content {
-    height: 130vh;
+    height: 170vh;
 
     min-width: 80vw;
   }
@@ -108,10 +114,20 @@ main section {
     min-height: 50px;
   }
 }
+@media only screen and (max-width: 790px) {
+  #projects {
+    min-height: 170vh;
+  }
+}
+@media only screen and (max-width: 550px) {
+  #projects {
+    height: 120vh;
+  }
+}
 
 @media only screen and (max-width: 380px) {
   #projects {
-    height: 170vh;
+    height: 190vh;
   }
   #projects-content,
   #projects-container {
