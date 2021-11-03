@@ -125,7 +125,7 @@ main section {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 390px) {
   #projects {
     height: 190vh;
   }
@@ -140,5 +140,11 @@ main section {
     padding-bottom: 10vh;
     max-width: 80vw;
     max-height: 80vh;
+  }
+  #about {
+    height: 140vh;
+  }
+  #about-content {
+    min-height: 120vh;
   }
 }
