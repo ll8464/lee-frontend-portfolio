@@ -1,7 +1,7 @@
 # lee-frontend-portfolio
 Hello!
 
-This portfolio's background was made utilizing the web tool https://app.haikei.app/ to make the waves seen.
+This portfolio's background was made utilizing the web tool https://app.haikei.app/ to make the vibrant waves seen. 
 
-The Contact page is made via netlify forms.
+The CSS was made via SASS while the Contact page is live via netlify forms. 
 
