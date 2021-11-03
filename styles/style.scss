@@ -1,5 +1,4 @@
 @import "./nav";
-@import "./curves";
 @import "./background-image";
 @import "./header";
 @import "./about";
@@ -25,7 +24,7 @@ main section {
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  //padding: 100px 20vw;
+
   color: white;
   height: 100vh;
   overflow: hidden;
@@ -45,12 +44,7 @@ main section {
 #contact-content h1 {
   text-align: center;
 }
-// #clothing {
-//   border: 2px solid black;
-// }
-// #weather {
-//   border: 2px solid black;
-// }
+
 .button {
   background-color: rgb(91, 107, 196);
   border: none;
@@ -75,20 +69,13 @@ main section {
   background-position: center;
   background-size: cover;
 }
-.shape-fill,
-.green,
-.blue,
-.darkred {
-  display: none;
-}
+
 @media only screen and (max-width: 830px) {
   #about-child,
   #projects-child {
     display: flex;
 
     flex-wrap: wrap;
-    // max-width: fit-content;
-    // max-height: fit-content;
   }
   #about {
     height: 110vh;
@@ -101,20 +88,15 @@ main section {
   }
   #projects-content {
     height: 130vh;
-    //max-height: 100vh;
+
     min-width: 80vw;
   }
   #about-container,
   #projects-container {
     display: block;
     z-index: 3;
-    //   max-width: fit-content;
-    //   max-height: fit-content;
   }
 
-  .shape-fill {
-    display: none;
-  }
   #about #github_logo,
   #html5_logo,
   #javascript_logo,
@@ -144,38 +126,3 @@ main section {
     max-height: 80vh;
   }
 }
-//   @media only screen and (max-height: 880px) {
-//     #projects,
-//     #contact {
-//       height: 120vh;
-//     }
-
-//     #contact-content,
-//     #about-container,
-//     #about-content {
-//       height: 100vh;
-//     }
-//     #projects,
-//     #projects-content,
-//     #projects-container {
-//       height: 180vh;
-//     }
-//     #projects-content {
-//       min-height: 180vh;
-//     }
-
-//   @media only screen and (max-height: 430px) {
-//     #projects,
-//     #contact,
-//     #about {
-//       height: 160vh;
-//     }
-//     #projects-content,
-//     #projects-container,
-//     #contact-content,
-//     #about-cantainer,
-//     #about-content {
-//       height: 160vh;
-//     }
-//   }
-// }
