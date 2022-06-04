@@ -125,28 +125,37 @@ footer img {
   }
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 833px) {
   #projects {
-    min-height: 170vh;
+    height: 280vh;
+  }
+  #projects-content,
+  #projects-container {
+    height: 250vh;
   }
 }
 @media only screen and (max-width: 550px) {
   #projects {
-    height: 120vh;
+    height: 280vh;
+  }
+  #projects-content,
+  #projects-container {
+    height: 220vh;
   }
 }
 
 @media only screen and (max-width: 390px) {
   #projects {
-    height: 190vh;
+    height: 280vh;
   }
   #projects-content,
   #projects-container {
-    height: 170vh;
+    height: 250vh;
   }
 
   #project-child,
-  #project-child2 {
+  #project-child2,
+  #project-child3 {
     padding-top: 5vh;
     padding-bottom: 10vh;
     max-width: 80vw;
