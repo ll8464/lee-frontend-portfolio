@@ -30,7 +30,9 @@ main section {
   overflow: hidden;
 }
 #dice_img,
-#portfolio_img {
+#portfolio_img,
+#shareboard_img,
+#bulls_img {
   display: block;
   overflow: hidden;
   img {
@@ -79,6 +81,9 @@ footer img {
   max-width: 50px;
   max-height: 50px;
 }
+#foot_linkedin {
+  max-height: 30px;
+}
 
 @media only screen and (min-width: 1360px) {
   #projects {
@@ -86,7 +91,86 @@ footer img {
   }
 }
 
+@media only screen and (max-width: 976px) {
+  #about-child,
+  #projects-child {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  #about {
+    height: 110vh;
+  }
+  #projects {
+    height: 200vh;
+  }
+  #about-content {
+    height: 90vh;
+  }
+  #projects-content {
+    height: 60vh;
+
+    min-width: 30vw;
+  }
+
+  #projects-content,
+  #projects-container {
+    height: 180vh;
+    width: 90vw;
+  }
+  #projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #project-child,
+  #project-child2,
+  #project-child3,
+  #project-child4 {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    max-width: 40vw;
+    min-width: 30vw;
+    max-height: 75vh;
+  }
+
+  #about-container {
+    display: block;
+    z-index: 3;
+  }
+
+  #about #github_logo,
+  #html5_logo,
+  #javascript_logo,
+  #css_logo,
+  #python_logo {
+    width: 8vw;
+    height: 10vh;
+    min-width: 50px;
+    min-height: 50px;
+  }
+}
+
 @media only screen and (max-width: 830px) {
+  #projects {
+    height: 280vh;
+  }
+  #projects-content,
+  #projects-container {
+    height: 150vh;
+  }
+
+  #project-child,
+  #project-child2,
+  #project-child3,
+  #project-child4 {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    max-width: 40vw;
+    min-width: 30vw;
+    max-height: 80vh;
+  }
+
   #about-child,
   #projects-child {
     display: flex;
@@ -107,8 +191,7 @@ footer img {
 
     min-width: 80vw;
   }
-  #about-container,
-  #projects-container {
+  #about-container {
     display: block;
     z-index: 3;
   }
@@ -125,28 +208,44 @@ footer img {
   }
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 650px) {
   #projects {
-    min-height: 170vh;
+    height: 350vh;
   }
-}
-@media only screen and (max-width: 550px) {
-  #projects {
-    height: 120vh;
+  #projects-content,
+  #projects-container {
+    height: 320vh;
+  }
+  #projects-container {
+    display: block;
+    z-index: 3;
+  }
+
+  #project-child,
+  #project-child2,
+  #project-child3,
+  #project-child4 {
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    max-width: 80vw;
+    min-width: 30vw;
+    max-height: 80vh;
   }
 }
 
 @media only screen and (max-width: 390px) {
   #projects {
-    height: 190vh;
+    height: 340vh;
   }
   #projects-content,
   #projects-container {
-    height: 170vh;
+    height: 320vh;
   }
 
   #project-child,
-  #project-child2 {
+  #project-child2,
+  #project-child3,
+  #project-child4 {
     padding-top: 5vh;
     padding-bottom: 10vh;
     max-width: 80vw;
