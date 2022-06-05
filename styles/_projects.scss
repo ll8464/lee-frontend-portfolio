@@ -9,7 +9,8 @@
 }
 #project-child,
 #project-child2,
-#project-child3 {
+#project-child3,
+#project-child4 {
   flex: 1;
   //border:2px solid black;
   margin-left: 2%;
@@ -27,6 +28,10 @@
   position: relative;
   margin: 20px;
   color: rgb(23, 35, 39);
+}
+
+#project-child4 img {
+  max-height: 18vh;
 }
 
 #projects h1 {
