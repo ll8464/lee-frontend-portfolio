@@ -37,3 +37,6 @@ The CSS was made via SASS while the Contact page is live via netlify forms.
 
 - A new color scheme may be in order. More muted colors/styling so the project can stand out more.
 - Could redesign the page to be more of a modern blog style.
+
+* Remove up Arrow for desktop sizes
+* Make all Section within 100vh
